@@ -19,7 +19,7 @@ resting_ecg=st.selectbox("resting ecg",["NORMAL","ST","LVH"])
 max_hr=st.slider("Max heart rate",60,220,150)
 exercise_angina=st.selectbox("Exercise included angina",["Y","N"])
 oldpeak=st.slider("Oldpeak(ST DEPRESSION)",0.0,6.0,1.0)
-st_slope=st.selectbox("ST Slope",["UP',"FLAT","DOWN"])
+st_slope=st.selectbox("ST Slope",["UP","FLAT","DOWN"])
 
 if st.button("Predict"):
     raw_input = {
